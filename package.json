@@ -1,0 +1,62 @@
+{
+  "name": "type-c-language-support",
+  "displayName": "Type-C Language Support",
+  "description": "Type-C programming language support",
+  "version": "0.0.1",
+  "publisher": "praisethemoon",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "type-c",
+        "extensions": [
+          ".tc"
+        ],
+        "aliases": [
+          "Type-C",
+          "type-c"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "type-c",
+        "scopeName": "source.type-c",
+        "path": "./syntaxes/type-c.tmLanguage.json"
+      }
+    ]
+  },
+  "main": "out/extention.js", 
+  "activationEvents": [
+    "onLanguage:type-c"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unlimitedsoftwareworks/type-c-vscode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unlimitedsoftwareworks/type-c-vscode/issues"
+  },
+  "homepage": "https://github.com/unlimitedsoftwareworks/type-c-vscode#readme",
+  "dependencies": {
+    "@types/vscode": "^1.85.0",
+    "vscode-languageclient": "^9.0.1",
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9"
+  }
+}
