@@ -2,8 +2,9 @@
   "name": "type-c-language-support",
   "displayName": "Type-C Language Support",
   "description": "Type-C programming language support",
+  "icon": "images/icon.png",
   "version": "0.0.1",
-  "publisher": "praisethemoon",
+  "publisher": "unlimitedsoftwareworks",
   "engines": {
     "vscode": "^1.83.0"
   },
